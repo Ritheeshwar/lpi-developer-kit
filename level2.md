@@ -1,6 +1,8 @@
-\## What I Did
+What I Did
 
-\- Cloned the LPI Developer Kit repository
+
+
+\- Ran the LPI sandbox locally
 
 \- Installed dependencies using npm
 
@@ -10,33 +12,35 @@
 
 
 
-\## What I Learned
-
-\- The LPI Sandbox provides a structured tool-based interface for interacting with digital twin knowledge systems
-
-\- Tools act like modular APIs that can be invoked by agents to retrieve insights, case studies, and methodology steps
-
-\- The system follows a methodology-driven approach (SMILE framework) rather than just raw LLM responses
-
-\- Local execution ensures controlled and reliable tool usage compared to external APIs
+What I Learned
 
 
 
-\## Challenges
+\- The LPI sandbox provides structured tools for interacting with digital twin systems
 
-\- Initial setup understanding (commands and flow)
+\- Tools act like modular APIs for retrieving knowledge and insights
 
-\- Understanding how tools are structured and invoked
+\- The system follows the SMILE methodology instead of raw LLM responses
+
+\- Local execution ensures reliable and controlled tool usage
 
 
 
-\## Insights
+Challenges
 
-\- This architecture is well-suited for building AI agents that require structured knowledge access
 
-\- Tool-based systems are more reliable than pure LLM prompting for domain-specific tasks
 
-\- This can be extended into agent-based systems similar to RAG + tool calling pipelines
+\- Understanding the setup process initially
 
-Update
+\- Learning how tools are structured and invoked
+
+
+
+Insights
+
+
+
+\- Tool-based architectures are more reliable than pure prompting
+
+\- This approach is useful for building agent-based systems
 
