@@ -4,15 +4,20 @@
 Successfully ran the full LPI sandbox locally.
 
 ## Test Client Output
-```bash
+
 npm run test-client
 
-=== Results ===
-Passed: 8/8
-Failed: 0/8
+[PASS] smile_overview({})
+[PASS] smile_phase_detail({"phase":"reality-emulation"})
+[PASS] list_topics({})
+[PASS] query_knowledge({"query":"explainable AI"})
+[PASS] get_case_studies({})
+[PASS] get_case_studies({"query":"smart buildings"})
+[PASS] get_insights({"scenario":"personal health digital twin","tier":"free"})
+[PASS] get_methodology_step({"phase":"concurrent-engineering"})
 
-All tools working. Your LPI Sandbox is ready.
-You can now build agents that connect to this server.
+Passed: 8/8 | Failed: 0/8
+All tools working. LPI Sandbox ready.
 
 ## Local LLM Integration
 Integrated a **local Ollama model** into my workflow and used it later as the reasoning engine inside my Level 3 agent.
