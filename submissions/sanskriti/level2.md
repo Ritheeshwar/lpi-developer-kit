@@ -14,6 +14,15 @@ I successfully ran the LPI sandbox test client. All 7 tools passed.
 **Proof:** [test-client-output.txt](test-client-output.txt)
 
 ```
+[PASS] smile_overview({})
+[PASS] smile_phase_detail({"phase":"reality-emulation"})
+[PASS] list_topics({})
+[PASS] query_knowledge({"query":"explainable AI"})
+[PASS] get_case_studies({})
+[PASS] get_case_studies({"query":"smart buildings"})
+[PASS] get_insights({"scenario":"personal health digital twin","tier":"free"})
+[PASS] get_methodology_step({"phase":"concurrent-engineering"})
+
 === Results ===
 Passed: 8/8
 Failed: 0/8
