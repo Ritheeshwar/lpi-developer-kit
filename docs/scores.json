@@ -141,7 +141,7 @@
     "score": 8,
     "max": 11,
     "pct": 73,
-    "updated": "2026-04-16T14:20:34.209Z"
+    "updated": "2026-04-17T04:21:26.425Z"
   },
   "sanskriti": {
     "name": "Sanskriti",
@@ -238,5 +238,13 @@
     "max": 11,
     "pct": 18,
     "updated": "2026-04-16T23:11:58.633Z"
+  },
+  "harshit-kumar": {
+    "name": "Harshit Kumar",
+    "level": 3,
+    "score": 9,
+    "max": 11,
+    "pct": 82,
+    "updated": "2026-04-17T04:22:15.220Z"
   }
 }

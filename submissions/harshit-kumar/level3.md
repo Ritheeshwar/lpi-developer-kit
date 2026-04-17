@@ -21,15 +21,16 @@ A Python-based AI agent that connects to the Life Programmable Interface (LPI) M
                        
                         6. From my contributor profile (`my_twin` field): I want to track the correlation between my deep-focus coding sessions and the quality of my stock market trade decisions. This agent is the first step — it queries the LPI to understand how SMILE phases map to building that kind of personal behavioral digital twin.
                        
-                        7. ### Agent Repository / Code Location
+                        7. ---
                        
-                        8. The agent code is in this fork at:
+                        8. ## Agent Repository / Code Location
                        
-                        9. `agent/agent.py` → https://github.com/hrk0503/lpi-developer-kit/blob/master/agent/agent.py
+                        9. The agent code is in this fork at:
+                        10. **`agent/agent.py`** → https://github.com/hrk0503/lpi-developer-kit/blob/master/agent/agent.py
                        
-                        10. ### Key Design Decisions
+                        11. ### Key Design Decisions
                        
-                        11. - **Raw Python + subprocess** — same pattern as `examples/agent.py`, no extra framework dependencies
+                        12. - **Raw Python + subprocess** — same pattern as `examples/agent.py`, no extra framework dependencies
                             - - **Provenance tracking** — every part of the output is labeled with which LPI tool produced it
                               - - **Minimum 2 tools queried** — `smile_overview` + `query_knowledge` are always called; `get_insights` is called conditionally
                                 - - **No LLM required** — the agent produces a structured, explainable answer directly from LPI tool outputs (LLM integration is optional/additive)
