@@ -2,7 +2,7 @@ How I Did It — Level 2 (Rahul Bijarnia)
 
 Step 1: Cloned the Repository  
 I cloned the LPI Developer Kit repository to my local machine using:  
-git clone https://github.com/g-khushi/lpi-developer-kit.git  
+git clone https://github.com/RahulBijarnia1/lpi-developer-kit.git  
 cd lpi-developer-kit  
 
 Step 2: Installed Dependencies  
