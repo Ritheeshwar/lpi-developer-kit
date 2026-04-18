@@ -2,7 +2,7 @@
 
 ## GitHub Repo
 
-https://github.com/YOUR_USERNAME/lpi-agent-smile-advisor
+https://github.com/g-khushi/lpi-agent-smile-advisor
 
 ## Objective
 
