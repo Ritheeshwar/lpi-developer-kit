@@ -25,52 +25,32 @@ Available tools (7):
 [PASS] smile_overview({})
 S.M.I.L.E. — Sustainable Methodology for Impact Lifecycle Enablement  
 Benefits-driven digital twin implementation methodology.
-
----
-
 [PASS] smile_phase_detail({"phase":"reality-emulation"})
 ### Phase 1: Reality Emulation  
 Duration: Days to Weeks  
 Description: Create a shared reality canvas — establishing a baseline understanding of the system.
-
----
-
 [PASS] list_topics({})
 ### Available LPI Topics  
 - Reality Emulation (Phase 1)  
 - Concurrent Engineering (Phase 2)  
 - Collaboration Frameworks  
-- Knowledge Graphs for Digital Twins  
-
----
-
-[PASS] query_knowledge({"query":"explainable AI"})
+- Knowledge Graphs for Digital Twins
+- [PASS] query_knowledge({"query":"explainable AI"})
 ### Knowledge Results  
 40 entries found (showing top 5):
 
 Ontology Factories as Foundation for AI Factories  
 Before deploying AI systems...
-
----
-
 [PASS] get_case_studies({})
 ### Case Studies (10 available)
 
 Smart Heating for Municipal Schools — Self-Learning Digital Twins  
 Industry: Smart Buildings  
-...
-
----
-
 [PASS] get_case_studies({"query":"smart buildings"})
 ### Case Study Result
 
 Smart Heating for Municipal Schools — Self-Learning Digital Twins  
 Industry: Smart Buildings  
-...
-
----
-
 [PASS] get_insights({"scenario":"personal health digital twin","tier":"free"})
 ### Implementation Insights
 
@@ -78,9 +58,6 @@ Relevant Knowledge:
 - PK/PD Modeling in Digital Twins
 - Real-time health monitoring systems
 - Predictive patient modeling
-
----
-
 [PASS] get_methodology_step({"phase":"concurrent-engineering"})
 
 ### Phase 2: Concurrent Engineering  
