@@ -47,3 +47,16 @@ Initially, I hardcoded my local path, but I realized: an automated evaluation bo
 
 Next time, to make deployment even more seamless, I would package the agent inside a Docker container using a docker-compose network to connect to the LPI server, eliminating file-path hunting altogether. I would also add an A2A Agent Card dynamically so the agent could integrate directly into the LifeAtlas mesh.
 
+## Design Decisions & Independent Thinking
+
+**My Approach & Tool Selection Trade-offs:**
+Instead of building a simple script that blindly forwards keywords to tools, I decided to build a **Secure Agentic Router**. The primary constraint I observed was that raw LLMs often hallucinate tool parameters. 
+* **Trade-off:** I sacrificed the simplicity of direct LLM calls to build a custom `dynamic_tool_selector()`. This ensures that specific constraints (like 'example') explicitly enforce the `get_case_studies` tool, providing guaranteed provenance before the LLM even sees the data. 
+
+**Choices Made That Weren't In The Instructions:**
+1.  **Auto-Discovery Path Hunter:** The instructions assumed a static local environment. I independently engineered a recursive path-hunting algorithm (`find_lpi_server()`). I realized that CI/CD pipelines or different reviewers might clone the repo in varying directory structures, which would break standard relative paths. This choice makes the agent universally deployable.
+2.  **Strict JSON Enforcement:** I forced the LLM into strict JSON output mode to prevent markdown-leakage during orchestration, which is a critical enterprise-grade security choice not mentioned in the basic tutorial.
+
+## What I Would Do Differently Next Time
+If I were to rebuild this for production, the current implementation of spinning up the Node.js MCP server as a Python `subprocess` per execution is resource-heavy. 
+Next time, I would decouple the architecture by containerizing the LPI tools in a standalone **Docker container** and exposing them over a persistent local network port. Furthermore, I would cache the outputs of static tools like `smile_overview` using an LRU cache to reduce latency and API overhead on subsequent queries.
