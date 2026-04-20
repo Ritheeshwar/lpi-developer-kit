@@ -1,4 +1,4 @@
-# How I Did It — Sania Gurung, Level 3, Track A
+# How I Did It - Level 3
 
 ## What I did, step by step
 
