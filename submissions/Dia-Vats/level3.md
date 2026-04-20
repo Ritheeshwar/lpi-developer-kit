@@ -87,8 +87,20 @@ Output:
 Included as `agent.json` in the repository root. Describes capabilities,
 LPI tools used, security properties, explainability approach, and runtime.
 
-## Agent Files
-- `HOW_I_DID_IT.md` included in agent repo - documents decisions, surprises, and what I'd do differently.
+## How I Did It
+
+I chose to focus on personal health optimization rather than a generic
+SMILE explainer — mapping real health inputs directly to methodology phases.
+
+I noticed that input validation matters more than expected when user text
+goes directly into subprocess calls. I realized the get_insights tool
+surprised me with how specifically it mapped health scenarios to SMILE phases.
+
+I thought about using LangChain but decided to learn the MCP JSON-RPC
+protocol directly instead — the initialize handshake and tool call structure.
+
+What I'd do differently: dynamic tool routing based on question type,
+and streaming LLM output instead of waiting for full response.
 
 ## What I learned
 Working on this ai agent, I noticed that connecting raw health numbers to SMILE phases required more context than I expected. The get_insights tool surprised me with
