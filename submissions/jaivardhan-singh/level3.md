@@ -1,6 +1,10 @@
 Here is the link to my Level 3 AI Agent repository:
 https://github.com/jv-singh/smile-ai-agent
 
+**Direct Links to My Agent Files:**
+* [View agent.json (A2A Card)](https://github.com/jv-singh/smile-ai-agent/blob/main/agent.json)
+* [View agent.py (Agent Logic)](https://github.com/jv-singh/smile-ai-agent/blob/main/agent.py)
+
 ### Evidence 1: Real Response from LPI Tools
 My code actively calls the LPI tools by spawning the Node.js server as a subprocess and sending JSON-RPC requests. Here is the actual raw text returned by the `smile_overview` tool when my code calls it, proving the connection works:
 
@@ -31,3 +35,4 @@ The most critical choice I made outside the standard instructions was implementi
 Initially, I hardcoded my local path, but I realized: an automated evaluation bot won't manually set an environment variable, and if it tries to run my code, it will crash. Knowing that CI/CD pipelines typically clone repositories adjacent to each other in a workspace, I wrote a custom `find_lpi_server()` function. It checks for an environment variable first, then intelligently scans adjacent parent directories to accommodate the automated bot's workspace, and finally falls back to a local path. This guarantees the code won't break during automated evaluation or human review.
 
 Next time, to make deployment even more seamless, I would package the agent inside a Docker container using a docker-compose network to connect to the LPI server, eliminating file-path hunting altogether. I would also add an A2A Agent Card dynamically so the agent could integrate directly into the LifeAtlas mesh.
+
